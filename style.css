@@ -56,6 +56,10 @@ body {
     color: #333333;
 }
 
+.text-control {
+    font-size: 1rem;
+}
+
 .form {
     margin-bottom: 15px;
 }
@@ -76,6 +80,6 @@ label {
     margin-bottom: 10px;
 }
 
-.parent-active {
+.li-active {
     background-color: #f2f5fd;
 }
