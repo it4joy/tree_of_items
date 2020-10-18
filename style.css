@@ -80,6 +80,10 @@ label {
     margin-bottom: 10px;
 }
 
+.btn-save-cat {
+    display: none;
+}
+
 .li-active {
     background-color: #f2f5fd;
 }
