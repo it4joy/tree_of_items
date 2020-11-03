@@ -49,10 +49,10 @@ const domReady = () => {
 
         if (projectHeadingValue.length === 0) {
             projectHeadingValue = generateHeading();
+            projectNameField.value = projectHeadingValue;
         }
 
         filledFieldsAmount++;
-        projectNameField.value = projectHeadingValue;
         appData.meta.projectName = projectHeadingValue;
 
         // comment handling
@@ -70,8 +70,11 @@ const domReady = () => {
             // test +
             //console.log("2 required fields were filled.");
             setTimeout( () => {
-                window.location.reload("/project.html");
-            }, 5000 );
+                const projectLinkWrapper = document.querySelector(".project-link");
+                projectLinkWrapper.textContent = "Go to the Project Page";
+                projectLinkWrapper.setAttribute("href", "project.html");
+                //window.location.reload("/project.html"); // for prod
+            }, 2000 );
         }
     } );
 };
