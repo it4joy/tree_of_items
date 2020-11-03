@@ -16,6 +16,11 @@ body {
     height: inherit;
 }
 
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .row {
     display: flex;
 }
@@ -30,6 +35,10 @@ body {
 
 .col-70 {
     width: 70%;
+}
+
+.col-50 {
+    width: 50%;
 }
 
 .col-30 {
@@ -68,7 +77,7 @@ body {
     display: none;
 }
 
-.form-field {
+.form-field, .textarea {
     display: block;
     margin-bottom: 10px;
     padding: 6px;
@@ -80,10 +89,20 @@ label {
     margin-bottom: 10px;
 }
 
+.textarea {
+    resize: none;
+    height: 200px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
 .btn-save-cat {
     display: none;
 }
 
 .li-active {
     background-color: #f2f5fd;
+}
+
+.project-page .form {
+    width: 50%;
 }

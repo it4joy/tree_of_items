@@ -4,47 +4,30 @@
         <meta charset="UTF-8">
         <title>Tree Of Items</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
     </head>
-    <body>
+    <body class="project-page">
         <div class="wrapper">
-            <div class="row">
-                <div class="col col-70">
-                    <div class="working-area">
-                        <ol id="0" class="root-list list"></ol>
-
-                        <!-- <div class="working-item parent-item">
-                            <label for="category_1">Category 1</label>
-                            <input type="text" id="category_1" class="form-field">
-                            <div class="btn-wrapper">
-                                <button type="button" class="btn btn-add-subcat">Add a subcategory</button>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col col-30">
-                    <div class="form-wrapper">
-                        <h4 class="form-heading">Add & edit categories / subcategories</h4>
-                        <form class="form category-form">
-                            <label for="new-category">Category name
-                                <span class="state"></span>
-                            </label>
-                            <input type="text" id="new-category" class="form-field">
-                            <button type="button" class="btn btn-add-cat">Add</button>
-                            <button type="button" class="btn btn-save-cat">Save</button>
-                            <button type="button" class="btn btn-clear">Clear</button>
-                            <hr>
-                        </form>
-                        <form class="form subcategory-form">
-                            <label for="new-subcategory">Subcategory name</label>
-                            <input type="text" id="new-subcategory" class="form-field">
-                            <button type="button" class="btn btn-add-subcat">Add</button>
-                            <button type="button" class="btn btn-clear">Clear</button>
-                            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-100">
+                        <h1>Hi there!</h1>
+                        <p>We glad to present a simple and small tool for classification.</p>
+                        <p>Please, firstly fill several fields.</p>
+                        <form class="form form-init-project">
+                            <label for="project-name">Name of Project</label>
+                            <input type="text" id="project-name" class="form-field">
+                            <label for="author-name">Author</label>
+                            <input type="text" id="author-name" class="form-field">
+                            <label for="project-comment">Comment</label>
+                            <textarea id="project-comment" class="textarea"></textarea>
+                            <button type="button" class="btn btn-init-project">Save & Go ahead!</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="app.js"></script>
+        <script src="index.js"></script>
+        <script src="heading-generator.js"></script>
     </body>
 </html>
